@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prediction</title>
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='styles/styling.css') }}">
+</head>
+<body>
+	{% if diabetes == "Yes" %}
+		<h1>You are having diabetes</h1>
+	{% else %}
+		<h1>You are healthy</h1>
+	{% endif %}
+	<!-- <h1>{{diabetes}}</h1> -->
+	<a href="/">Home</a>
+</body>
+</html>
