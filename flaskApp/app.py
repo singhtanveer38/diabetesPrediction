@@ -12,16 +12,13 @@ def homePage():
 	if request.method == "GET":
 		return render_template("homePage.html")
 	else:
-		pregnancies = request.form.get("pregnancies")
 		glucose = request.form.get("glucose")
 		bloodPressure = request.form.get("bloodPressure")
-		skinThickness = request.form.get("skinThickness")
 		insulin = request.form.get("insulin")
 		BMI = request.form.get("BMI")
-		diabetesPedigreeFunction = request.form.get("diabetesPedigreeFunction")
 		age = request.form.get("age")
 
-		parameters = [[pregnancies, glucose, bloodPressure, skinThickness, insulin, BMI, diabetesPedigreeFunction, age]]
+		parameters = [[glucose, bloodPressure, insulin, BMI, age]]
 
 		return redirect("/prediction")
 
