@@ -30,7 +30,7 @@ def predictionPage():
 	global parameters
 	global classifier
 	result = classifier.predict(parameters)
-	if result == [0]:
+	if result == [1]:
 		diabetes = "Yes"
 	else:
 		diabetes = "No"
