@@ -1,4 +1,4 @@
-body
+/*body
 {
 	background-color: lightblue;
 	display: block;
@@ -11,7 +11,7 @@ h1{
 
 form{
 	display: block;
- 	padding: 2em 40em 2em;
+ 	padding: 2% 40% 2%;
 }
 
 div {
@@ -42,4 +42,59 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}*/
+
+body{
+  background-color: #3C8DAD;
+}
+
+h1{
+  color: #F5A962;
+  text-align: center;
+}
+
+form{
+  border-style: double;
+  border-radius: 5px;
+  border-color: #DDDDDD;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 1%;
+}
+
+div{
+  background-color: #125D98;
+  display: block;
+  padding: 2%;
+}
+
+label{
+  color: #F5A962;
+  width: 10%;
+  display: inline-block;
+  text-align: left;
+  margin-right: 50%;
+}
+
+input[type=number]{
+  width: 30%;
+  border: none;
+  border-radius: 4px;
+  padding: 1%;
+  display: inline-block;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #3C8DAD;
+  color: #F5A962;
+  margin-left: 35%;
+  padding: 5%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer{
+  padding-top: 5%;
 }

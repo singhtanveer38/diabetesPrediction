@@ -11,46 +11,54 @@
 
 	<form method="post">
 		<div>
-			<label for="pregnancies">pregnancies</label>
-			<input type="text" name="pregnancies">
+			<label for="pregnancies">Pregnancies</label>
+			<input type="number" name="pregnancies" required>
 		</div>
 
 		<div>
 			<label for="glucose">Glucose</label>
-			<input type="text" name="glucose">
+			<input type="number" name="glucose" required>
 		</div>
 
 		<div>
 			<label for="bloodPressure">BloodPressure</label>
-			<input type="text" name="bloodPressure">
+			<input type="number" name="bloodPressure" required>
 		</div>
 
 		<div>
 			<label for="skinThickness">SkinThickness</label>
-			<input type="text" name="skinThickness">
+			<input type="number" name="skinThickness" required>
 		</div>
 
 		<div>
 			<label for="insulin">Insulin</label>
-			<input type="text" name="insulin">
+			<input type="number" name="insulin" required>
 		</div>
 
 		<div>
 			<label for="BMI">BMI</label>
-			<input type="text" name="BMI">
+			<input type="number" name="BMI" step="0.1" required>
 		</div>
 
 		<div>
 			<label for="diabetesPedigreeFunction">DiabetesPedigreeFunction</label>
-			<input type="text" name="diabetesPedigreeFunction">
+			<input type="number" name="diabetesPedigreeFunction" required step="0.001">
 		</div>
 
 		<div>
 			<label for="age">Age</label>
-			<input type="text" name="age">
+			<input type="number" name="age" required>
 		</div>
-		
-		<input type="submit", value="Predict!!">
+
+		<div>
+			<input type="submit", value="Predict!!">
+		</div>
 	</form>
+	<footer>
+		<p>Created by: Tanveer Singh</p>
+		<p>Email: singhtanveer38@yahoo.com</p>
+		<a href="https://github.com/singhtanveer38" target="_blank">Github</a>
+		<a href="https://www.linkedin.com/in/tanveer-singh-250b02194" target="_blank">LinkedIn</a>		
+	</footer>
 </body>
 </html>
