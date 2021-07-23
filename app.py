@@ -3,7 +3,7 @@ import joblib
 
 app = Flask(__name__)
 
-classifier = joblib.load('/home/tanveer/pythonProjects/diabetesPrediction/classifier.pkl')
+classifier = joblib.load('./classifier.pkl')
 parameters = []
 
 @app.route("/", methods=["GET", "POST"])
